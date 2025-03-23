@@ -16,6 +16,7 @@
 body {
 	display: flex;
 	margin: 0;
+	background: var(--light-gray);
 }
 
 h1 {
@@ -34,9 +35,7 @@ h2 {
 .left-side {
 	height: 100vh;
 	width: 400px;
-	background-image: url("./img/ferns.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	position: relative;
 }
 
 .banner {
@@ -45,28 +44,15 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
-	position: relative;
-	margin-top: 160px;
+	position: absolute;
+	margin-top: -650px;
+	width: inherit;
 }
 
-.attribution,
-.attribution a {
-	color: var(--light-gray);
+.top {
+	margin: 125px 125px 50px 30px;
+	line-height: 1.2;
 }
-
-.attribution {
-	font-family: sans-serif;
-	font-size: 11px;
-	position: fixed;
-	bottom: 0;
-	text-align: center;
-	margin-left: 7%;
-}
-
-.right-side {
-	background: var(--light-gray);
-}
-
 button {
 	background: var(--olive);
 	color: var(--light-gray);
@@ -76,7 +62,7 @@ button {
 	padding: 12px 42px;
 	margin: 0;
 	border: 0;
-	border-radius: 4px;
+	border-radius: 5px;
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -89,4 +75,60 @@ button {
 .returning-user {
 	font-family: sans-serif;
 	font-size: 14px;
+}
+
+.attribution,
+.attribution a {
+	color: var(--light-gray);
+}
+
+.attribution {
+	font-family: sans-serif;
+	font-size: 11px;
+	position: absolute;
+	bottom: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/*Code below inspired by Skillthrive's HTML and CSS Project Tutorial: Pure CSS Image Slider.*/
+
+.slider-wrapper {
+	position: relative;
+}
+
+.slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 0.75rem;
+	position: absolute;
+	bottom: 2.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
 }
