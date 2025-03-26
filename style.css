@@ -1,6 +1,7 @@
 :root {
 	--light-gray: rgb(249, 250, 251);
 	--olive: #596d48;
+	--margin-left: 50px;
 }
 
 @font-face {
@@ -50,22 +51,35 @@ h2 {
 }
 
 .top {
-	margin: 125px 125px 50px 30px;
+	margin: 125px 125px 40px var(--margin-left);
 	line-height: 1.2;
 }
 
 .form-container {
 	background: white;
 	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
-	padding: 20px 0px 35px 50px;
+	padding: 20px 0px 35px var(--margin-left);
+	animation-name: gentle-float;
+	animation-duration: 2s;
+}
+
+@keyframes gentle-float {
+	0% {
+		transform: translateY(20px);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 100%;
+	}
 }
 
 .sign-up-form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 30px 50px;
+	gap: 30px var(--margin-left);
 	margin-top: 20px;
-	margin-right: 50px;
+	margin-right: 200px;
 }
 
 .field {
@@ -76,11 +90,22 @@ h2 {
 .field input {
 	border: 1px rgb(233, 232, 232) solid;
 	height: 22px;
+	border-radius: 3px;
+}
+
+.field input:focus {
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+	outline: 1px blue solid;
 }
 
 .field label {
 	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+#confirm-password:invalid,
+#user-password:invalid {
+	outline: 1px rgb(215, 1, 1) solid;
 }
 
 button {
@@ -94,12 +119,13 @@ button {
 	border: 0;
 	border-radius: 5px;
 	box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-	margin: 50px;
+	margin: 40px 0px 10px var(--margin-left);
 }
 
 .returning-user {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
+	margin-left: var(--margin-left);
 }
 
 .right-side a {
