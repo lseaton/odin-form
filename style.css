@@ -44,8 +44,9 @@ h2 {
 	align-items: center;
 	gap: 5px;
 	position: absolute;
-	margin-top: -650px;
+	margin-top: -600px;
 	width: inherit;
+	padding: 10px 0px;
 }
 
 .top {
@@ -90,21 +91,7 @@ button {
 	transform: translateX(-50%);
 }
 
-/*Code below inspired by Skillthrive's HTML and CSS Project Tutorial: Pure CSS Image Slider.*/
-
-.slider-wrapper {
-	position: relative;
-}
-
-.slider {
-	display: flex;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-}
-
-@keyframes example {
+@keyframes auto-slide {
 	0% {
 		transform: translateX(0px);
 	}
@@ -128,10 +115,24 @@ button {
 	}
 }
 
+/*The code below was inspired by Skillthrive's HTML and CSS Project Tutorial: Pure CSS Image Slider.*/
+
+.slider-wrapper {
+	position: relative;
+}
+
+.slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
 .slider img {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	animation-name: example;
+	/*animation-name: auto-slide;
 	animation-duration: 12s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite;*/
 }
