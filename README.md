@@ -5,9 +5,9 @@
 <ul>Visual Studio Code, Git, Github</ul>
 <h3>Screenshots:</h3>
 My finished project
-<img src=".img/odin-form-animations.gif" alt="Gif of animated final project" width="600px" />
+<img src="./img/odin-form-animations.gif" alt="Gif of animated final project" width="600px" />
 Target design
-<img src=".img/target-layout.png" alt="Screenshot of target layout" width="600px">
+<img src="./img/target-layout.png" alt="Screenshot of target layout" width="600px">
 <p>Credits:</p>
 <ul>Icon and target layout from <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a></ul>
 <ul>Background images from <a target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on Unsplash</ul>
