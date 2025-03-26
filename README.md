@@ -4,10 +4,10 @@
 <h3>Tools:</h3>
 <ul>Visual Studio Code, Git, Github</ul>
 <h3>Screenshots:</h3>
-My finished project
+Screenshot
+<img src="./img/screenshot.png" alt="Screenshot of sign-up form project" width="600px">
+Animations
 <img src="./img/compressed-odin-form-animations.gif" alt="Gif of animated final project" width="400px" height="254px"/>
-Target design
-<img src="./img/target-layout.png" alt="Screenshot of target layout" width="400px">
 <p>Credits:</p>
 <ul>Icon and target layout from <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a></ul>
 <ul>Background images from <a target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on Unsplash</ul>
