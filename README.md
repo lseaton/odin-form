@@ -5,7 +5,7 @@
 <ul>Visual Studio Code, Git, Github</ul>
 <h3>Screenshots:</h3>
 My finished project
-<img src="./img/compressed-odin-form-animations.gif" alt="Gif of animated final project" width="400px"/>
+<img src="./img/compressed-odin-form-animations.gif" alt="Gif of animated final project" width="400px" height="254px"/>
 Target design
 <img src="./img/target-layout.png" alt="Screenshot of target layout" width="600px">
 <p>Credits:</p>
